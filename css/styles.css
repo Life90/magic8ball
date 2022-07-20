@@ -1,0 +1,53 @@
+.myButton {
+  box-shadow: 0px 0px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, #2408f3 5%, #09ace7 100%);
+  background-color: #c6e41c;
+  border-radius: 35px;
+  border: 5px solid #c9822b;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 66px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#input {
+  margin-left: 30px;
+  border-style: groove;
+}
+
+.label {
+  margin-left: 0px;
+}
+body {
+  /* background-color: rgb(208, 151, 75); */
+  background-image: url(../image/Ask.png);
+  background-size: cover;
+}
+
+.Title {
+  font-size: 4em;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Tangerine", cursive;
+}
+
+#Header {
+  background-image: linear-gradient(gray, yellow, gray, red);
+}
+
+#footer {
+  margin-top: 520px;
+  background-image: linear-gradient(aqua, yellow, green, red);
+}
