@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 ball Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav id="Header" class="navbar">
+        <div class="container-fluid">
+            <h1 class="Title">The Magic 8 Ball Final Project</h1>
+        </div>
+    </nav>
+    <!-- <form > -->
+    <input type="text" name="questionary" required minlength="5" text-area-cols="50" rows="2"
+        placeholder="Ask Me anything!" id="input">
+    <label id="Manna" for="question" aria-placeholder="Ask me anything!">
+        <h4 class="label">Ask me anything!</h4>
+    </label>
+    <!-- </form> -->
+    <button class="myButton" id=" test">
+        <p>Ask me</p>
+    </button>
+
+    <div id="answers">
+        <img id="magic" src="" alt="ball" width="400px" height="400px">
+    </div>
+    <script src="js/script.js"></script>
+
+    <button id="praise" onClick=" showImg()">Hurry up! Click me Please!</button>
+    <div>
+        <img src="" id="congrats" alt="Cgs">
+    </div>
+    <footer>
+        <nav id="footer" class="navbar">
+            <div class="container-fluid">
+                <h1 class="Title">The Magic 8 Ball Final Project</h1>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
