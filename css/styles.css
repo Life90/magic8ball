@@ -13,7 +13,7 @@
   padding: 10px 70px;
   text-decoration: none;
   text-shadow: 0px -1px 0px #5b6178;
-  margin-top: 90px;
+  margin-top: 60px;
   margin-left: 30px;
 }
 
@@ -34,41 +34,46 @@
 body {
   background-image: url(../images/background.png);
   background-size: cover;
+  position: fixed;
+  width: 100%;
 }
 
 .Title {
+  width: 100%;
   font-size: 4em;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto Mono", monospace;
   font-family: "Tangerine", cursive;
+  text-align: center;
 }
 
 #Header {
   background-image: linear-gradient(gray, yellow, gray, red);
+  width: 100%;
+  padding: 20px;
 }
 
 #footer {
-  margin-top: 121px;
+  padding: 20px;
+  width: 100%;
   background-image: linear-gradient(aqua, yellow, green, red);
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
+  top: 812px;
+  width: 100%;
 }
 
-#ball {
-  height: 300px;
-  width: 300px;
-  margin-top: 90px;
-  margin-left: 50px;
-}
-
-#magic {
-  margin-left: 35px;
+#answer2 {
+  height: 400px;
+  width: 400px;
   margin-top: 40px;
+  margin-left: 35px;
+  position: absolute;
+  border-radius: 100%;
 }
 
 .shake {
-  /* Start the shake animation and make the animation last for 1 second */
-  animation: shake 1s;
+  /* Start the shake animation and make the animation last for .5 second */
+  animation: shake 0.5s;
 }
 
 @keyframes shake {
@@ -124,23 +129,22 @@ body {
   text-shadow: 0px -1px 0px #5b6178;
   position: absolute;
   left: 1100px;
-  top: 180px;
+  top: 175px;
   padding: 30px 50px 30px;
 }
-
-#congrats {
-  width: 500px;
-  height: 300px;
+#congrats2 {
+  height: 286px;
+  width: 400px;
+  margin-top: 130px;
+  margin-left: 1120px;
   position: absolute;
-  left: 1100px;
-  top: 400px;
   border-radius: 70%;
 }
 
-#congrats {
-  animation: shake 3s;
-
-  animation-iteration-count: infinite;
+.shake {
+  /* Start the shake animation and make the animation last for 1 second */
+  animation: shake 1s;
+  /* animation-iteration-count: infinite; */
 }
 
 @keyframes shake {
@@ -157,7 +161,7 @@ body {
     transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    transform: translate(1px, -1px) rotate(3deg);
+    transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
     transform: translate(-1px, 2px) rotate(-1deg);
@@ -166,7 +170,7 @@ body {
     transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
-    transform: translate(3px, 1px) rotate(-3deg);
+    transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
     transform: translate(-1px, -1px) rotate(1deg);
@@ -175,6 +179,6 @@ body {
     transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    transform: translate(1px, -2px) rotate(-3deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
