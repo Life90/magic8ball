@@ -21,33 +21,45 @@
 </head>
 
 <body>
-    <nav id="Header" class="navbar">
-        <div class="container-fluid">
-            <h1 class="Title">The Magic 8 Ball Final Project</h1>
+    <div>
+        <header id="Header" class="navbar">
+            <nav class="center">
+                <div class="container-fluid">
+                    <h1 class="Title">The Magic 8 Ball Final Project</h1>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="row ">
+        <div class="col-sm-8 col-md-6 col-lg-6">
+            <input type="text" name="questionary" required minlength="5" text-area-cols="50" rows="2"
+                placeholder="Ask Me anything!" id="input">
+            <label id="Manna" for="question" aria-placeholder="Ask me anything!">
+                <h4 class="label">Ask me anything!</h4>
+            </label>
+            <button class="myButton" onClick="shake()" id=" test">
+                <p>Ask me</p>
+            </button>
+            <div id="answers">
+            </div>
         </div>
-    </nav>
-    <input type="text" name="questionary" required minlength="5" text-area-cols="50" rows="2"
-        placeholder="Ask Me anything!" id="input">
-    <label id="Manna" for="question" aria-placeholder="Ask me anything!">
-        <h4 class="label">Ask me anything!</h4>
-    </label>
-    <button class="myButton" id=" test">
-        <p>Ask me</p>
-    </button>
-
-    <div id="answers">
+        <div class="col-sm-8 col-md-6 col-lg-6">
+            <div>
+                <button id="praise" onClick="showImg()">Hurry up! Click me Please!</button>
+            </div>
+            <div id="congrats">
+            </div>
+        </div>
     </div>
 
-    <button id="praise" onClick="showImg()">Hurry up! Click me Please!</button>
-    <div id="congrats">
-    </div>
-    <footer>
-        <nav id="footer" class="navbar">
+    <footer id="footer" class="navbar">
+        <nav class="center">
             <div class="container-fluid">
                 <h1 class="Title">The Magic 8 Ball Final Project</h1>
             </div>
         </nav>
     </footer>
+
     <script src="js/script.js"></script>
 
 </body>
