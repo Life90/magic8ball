@@ -7,11 +7,11 @@ function shake() {
 
   setTimeout(function () {
     answers.classList.remove("shake");
-  }, 1500);
+  }, 3000);
 
   setTimeout(function () {
     getAnswers();
-  }, 0.003);
+  }, 0);
 }
 
 function getAnswers() {
