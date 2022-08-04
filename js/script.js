@@ -51,7 +51,7 @@ function getAnswers() {
   const input = document.querySelector("input").value;
   let disabled = document.getElementById("test");
   if (input.length <= 5) {
-    disabled = true;
+    newImg.src = "images/magic8ball_14.png";
     alert("Hey you need to enter your question first");
   } else if (input.length > 5) {
     disabled = false;
@@ -70,10 +70,6 @@ function showImg() {
   setTimeout(function () {
     congra.classList.remove("shake");
   }, 1500);
-
-  // if (motivation != null) {
-  //   motivation.parentNode.removeChild(motivation);
-  // }
 
   let congratsImg = new Array(
     "images/congrats.png",
