@@ -217,8 +217,15 @@ html {
 #footer {
   padding: 20px 0px;
   background-image: linear-gradient(rgb(59, 196, 98), yellow, green, red);
-  position: fixed;
-  margin-top: 55px;
+  position: sticky;
+  margin-top: 100px;
   bottom: 0;
   width: 100%;
+  z-index: 5;
+}
+
+@media (max-width: 600px) {
+  #praise {
+    margin-top: 500px;
+  }
 }

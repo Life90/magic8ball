@@ -1,7 +1,7 @@
 function shake() {
-  let ball = document.getElementById("answers2");
-  if (ball != null) {
-    ball.parentNode.removeChild(ball);
+  let luck = document.getElementById("answers2");
+  if (luck != null) {
+    luck.parentNode.removeChild(luck);
   }
   answers.classList.add("shake");
 
@@ -70,6 +70,10 @@ function showImg() {
   setTimeout(function () {
     congra.classList.remove("shake");
   }, 1500);
+
+  // if (motivation != null) {
+  //   motivation.parentNode.removeChild(motivation);
+  // }
 
   let congratsImg = new Array(
     "images/congrats.png",
